@@ -14,7 +14,9 @@ describe Meal do
   context 'have a recipe' do
     it 'should return the name of the recipe' do
       m1 = Meal.create(date: DateTime.new)
-      expect(m1.recipes).to eq 'Lasagna'
+      r1 = Recipe.create(name: 'Lasagna')
+      m1.recipe = r1
+      expect(m1.recipe.name).to eq 'Lasagna'
     end
   end
 
