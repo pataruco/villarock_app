@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 describe Recipe do
-  m1 = Meal.create(date: DateTime.new)
-  r1 = Recipe.create(name: 'Lasagna')
-  m1.recipe = r1
+    it "must have a name" do
+    r1 = Recipe.create
+    expect(r1.valid?).to eq false
+  end
 end
