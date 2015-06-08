@@ -12,19 +12,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # new gems
-  gem 'pry-byebug'
-  gem 'pry-rails'
   gem 'thin'
   gem 'normalize-rails', '~> 3.0.3'
-  gem 'capybara'
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'better_errors'
-  gem 'meta_request'
-  gem 'binding_of_caller'
-  gem 'capybara/rails'
 end
 
