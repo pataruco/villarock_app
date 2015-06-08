@@ -11,6 +11,13 @@ describe Meal do
     expect(meal.valid?).to eq false
   end
 
+  context 'have a recipe' do
+    it 'should return the name of the recipe' do
+      m1 = Meal.create(date: DateTime.new)
+      expect(m1.recipes).to eq 'Lasagna'
+    end
+  end
+
 
 
 
