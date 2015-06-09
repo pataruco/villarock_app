@@ -4,6 +4,10 @@
 <%= form_for @ingredient do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <%= radio_button_tag(:stock, :true) %>
+  <%= label_tag(:in_stock, 'In Stock') %>
+  <%= radio_button_tag(:stock, :false) %>
+  <%= label_tag(:to_buy, 'To buy') %>
 
 
 

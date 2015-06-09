@@ -1,0 +1,10 @@
+<%= form_for @meal do |form| %>
+  
+  <%= form.label :date %>
+  <%= date_field :date, :date %>
+  <%= form.label :preparation %>
+
+
+  <%= form.submit 'Submit' %>
+
+<% end %>
