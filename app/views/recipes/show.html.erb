@@ -2,5 +2,17 @@
 
 <p><%= @recipe.preparation %></p>
 
+<%  @recipe.ingredients.each do |ingredient| %>
+  <li><%= ingredient.name  %></li>
+  <% if ingredient.stock %>
+    <p>In stock</p>
+  <% else %>
+    <p>To buy<p>
+  <% end %>
+<% end %>
 
 <%= button_to('Delete', recipe_path(@recipe.id), method: :delete) %>
+
+
+
+
