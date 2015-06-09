@@ -39,7 +39,7 @@ class MealsController < ApplicationController
   private
 
   def meal_params
-    params.require(:meal).permit(:name, :preparation)
+    params.require(:meal).permit(:date, :category)
   end
 
 

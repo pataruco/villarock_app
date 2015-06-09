@@ -1,5 +1,5 @@
 <% @meals.each do |meal| %>
-  <li> <%= meal.recipe %>
+  <li> <%= meal.recipe.name %>
   <%= meal.date %>
   <%= meal.category %> </li>
 <% end %>
