@@ -10,7 +10,7 @@
     <p>To buy<p>
   <% end %>
 <% end %>
-
+<%= link_to('Edit recipe', edit_recipe_path(@recipe.id)) %>
 <%= button_to('Delete', recipe_path(@recipe.id), method: :delete) %>
 
 
