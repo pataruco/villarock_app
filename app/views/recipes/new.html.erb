@@ -1,7 +1,9 @@
 <%= form_for @recipe do |form| %>
   
   <%= form.label :name %>
-  <%= form.text_field :name %>x
+  <%= form.text_field :name %>
+  <%= form.label :preparation %>
+  <%= form.text_area :preparation %>
 
   <%= form.submit 'Submit' %>
 
