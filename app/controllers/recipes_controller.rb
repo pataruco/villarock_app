@@ -35,4 +35,12 @@ class RecipesController < ApplicationController
     recipe.destroy
     redirect_to(recipes_path)
   end
+
+  private
+
+  def recipe_params
+    params.require(:recipe).permit(:date, :category)
+  end
+
+
 end

@@ -36,5 +36,11 @@ class MealsController < ApplicationController
     redirect_to(meals_path)
   end
 
+  private
+
+  def meal_params
+    params.require(:meal).permit(:name, :preparation)
+  end
+
 
 end
