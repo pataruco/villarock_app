@@ -1,0 +1,14 @@
+<h1> <%= @ingredient.name %> </h1>
+
+<%= @ingredient.stock %>
+
+
+<% if @ingredient.stock %>
+  <p>In stock</p>
+  <%  else %>
+  <p>To buy</p>
+<% end %>
+
+
+
+

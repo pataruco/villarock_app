@@ -2,6 +2,10 @@
   
   <%= form.label :name %>
   <%= form.text_field :name %>
+  <%= radio_button_tag(:stock, :true) %>
+  <%= label_tag(:in_stock, 'In Stock') %>
+  <%= radio_button_tag(:stock, :false) %>
+  <%= label_tag(:to_buy, 'To buy') %>
 
   <%= form.submit 'Submit' %>
 
