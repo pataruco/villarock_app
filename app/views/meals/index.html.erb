@@ -1,5 +1,8 @@
 <% @meals.each do |meal| %>
-  <li> <%= meal.recipe.name %>
-  <%= meal.date %>
-  <%= meal.category %> </li>
+  <ul>
+    <li><h3><%= link_to(meal.date, meal_path(meal)) %></h3>
+    <p><%= meal.recipe.name %></p>
+    <p><%= meal.category %></p></li>
+  </ul>
 <% end %>
+
