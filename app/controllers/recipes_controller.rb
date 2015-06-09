@@ -35,5 +35,5 @@ class RecipesController < ApplicationController
     recipe = Recipe.find(params[:id])
     recipe.destroy
     redirect_to(recipes_path)
-
+  end
 end
