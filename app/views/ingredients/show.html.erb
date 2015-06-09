@@ -6,7 +6,7 @@
   <p>To buy</p>
 <% end %>
 
-<%= button_to('Edit ingredient', ingredient_path(@ingredient.id)) %>
+<%= button_to('Edit ingredient', edit_ingredient_path(@ingredient.id)) %>
 <%= button_to('Delete', ingredient_path(@ingredient.id), method: :delete) %>
 
 
