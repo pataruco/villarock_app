@@ -7,7 +7,7 @@
 <% end %>
 
 <%= link_to('Edit ingredient', edit_ingredient_path(@ingredient.id)) %>
-<%= button_to('Delete', ingredient_path(@ingredient.id), method: :delete) %>
+<%= link_to('Delete', ingredient_path(@ingredient.id), method: :delete) %>
 
 
 

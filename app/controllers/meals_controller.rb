@@ -8,6 +8,7 @@ class MealsController < ApplicationController
   end
 
   def create
+    @recipe = Recipe.find(params[:id])
     @recipes = Recipe.all
     meal = Meal.new params[:meal].permit(:date)
     if meal.save
