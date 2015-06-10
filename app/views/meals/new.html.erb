@@ -1,22 +1,17 @@
-<%= form_for @meal  do |form| %>
+<%= simple_form_for @meal do |form| %>
   
   <%= form.label :date %>
   <%= form.date_field :date %>
   <%= form.label(:category, 'Breakfast') %>
-  <%= form.radio_button(:category, 0) %>
+  <%= form.radio_button(:category, :breakfast) %>
   <%= form.label(:category, 'Lunch') %>
-  <%= form.radio_button(:category, 1) %>
+  <%= form.radio_button(:category, :lunch) %>
   <%= form.label(:category, 'Dinner') %>
-  <%= form.radio_button(:category, 2) %>
-  <%= form.label :recipe %>
+  <%= form.radio_button(:category, :dinner) %>
+  <%# form.association :recipe, as: :radio_buttons %>
+  <%= form.input :recipe, as: :radio_buttons %>
 
 
-
-  <%= form.submit 'Submit' %>
+  <%= form.submit %>
 
 <% end %>
-
-
-<%# @recipes.each do |recipe| %>
-  <%#= recipe.name %>
-<%# end %>

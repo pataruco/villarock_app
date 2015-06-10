@@ -1,0 +1,13 @@
+<h1> <%= @meal.date %> </h1>
+
+<p><%= @meal.category %></p>
+
+<p><%= @meal.recipe.name %></p>
+
+
+<%= link_to('Edit meal', edit_meal_path(@meal.id)) %>
+<%= link_to('Delete', meal_path(@meal.id), method: :delete) %>
+
+
+
+

@@ -1,12 +1,16 @@
 <h1><%= @recipe.name %></h1>
 
 
-<%= form_for @recipe do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :preparation %>
-  <%= f.text_area :preparation %>
+<%= simple_form_for @recipe do |form| %>
+  
+  <%= form.label :name %>
+  <%= form.text_field :name %>
 
-  <%= f.submit 'Update recipe' %>
+  <%= form.label :preparation %>
+  <%= form.text_area :preparation %>
+  <%= form.association :ingredients, as: :check_boxes %>
+
+
+  <%= form.submit %>
 
 <% end %>
