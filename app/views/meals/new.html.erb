@@ -1,8 +1,13 @@
 <%= form_for @meal do |form| %>
   
   <%= form.label :date %>
-  <%= date_field :date, :date %>
-  <%= form.label :category %>
+  <%= form.date_field :date %>
+  <%= form.label(:category, 'Breakfast') %>
+  <%= form.radio_button(:category, 0) %>
+  <%= form.label(:category, 'Lunch') %>
+  <%= form.radio_button(:category, 1) %>
+  <%= form.label(:category, 'Dinner') %>
+  <%= form.radio_button(:category, 1) %>
 
 
   
