@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # new gems
   gem 'thin'
   gem 'normalize-rails', '~> 3.0.3'
+  gem 'simple_form'
 
 group :development, :test do
   gem 'byebug'

@@ -5,11 +5,10 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
-    @ingredients = Ingredient.all
   end
 
   def create
-    recipe = Recipe.new params[:recipe].permit(:name)
+    recipe = Recipe.new params[:recipe].permit(:name, :preparation, :ingredient_ids => [])
     if recipe.save
       redirect_to recipes_path
     else
