@@ -1,12 +1,11 @@
-<%= form_for @ingredient do |form| %>
-  
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-  <%= radio_button_tag(:stock, :true) %>
-  <%= label_tag(:in_stock, 'In Stock') %>
-  <%= radio_button_tag(:stock, :false) %>
-  <%= label_tag(:to_buy, 'To buy') %>
+ 
+<%= form_for @ingredient do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.radio_button(:stock, :true) %>
+  <%= f.label(:in_stock, 'In Stock') %>
+  <%= f.radio_button(:stock, :false) %>
+  <%= f.label(:to_buy, 'To buy') %>
 
-  <%= form.submit 'Submit' %>
-
+  <%= f.submit 'New ingredient' %>
 <% end %>

@@ -8,9 +8,9 @@
   <%= form.radio_button(:category, 1) %>
   <%= form.label(:category, 'Dinner') %>
   <%= form.radio_button(:category, 2) %>
-  <% @recipes.each do |recipe| %>
-    <%= recipe.name %>
-  <% end %>
+  <%= form.label :recipe %>
+  <%= form.input %>
+  
 
 
 
