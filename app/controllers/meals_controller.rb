@@ -4,12 +4,11 @@ class MealsController < ApplicationController
   end
 
   def new
+    @recipes = Recipe.all
     @meal = Meal.new
   end
 
   def create
-    @recipe = Recipe.find(params[:id])
-    @recipes = Recipe.all
     meal = Meal.new params[:meal].permit(:date)
     if meal.save
       redirect_to meals_path

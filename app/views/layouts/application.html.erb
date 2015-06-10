@@ -8,6 +8,14 @@
 </head>
 <body>
 
+  <nav class="nav">
+      <ul>
+          <li> <%= link_to('Ingredients', ingredients_path) %> </li>
+          <li> <%= link_to('Recipes', recipes_path) %> </li>
+          <li> <%= link_to('Meals', meals_path) %> </li>
+      </ul>
+  </nav>
+
 <%= yield %>
 
 </body>

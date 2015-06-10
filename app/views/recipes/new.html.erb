@@ -4,7 +4,19 @@
   <%= form.text_field :name %>
   <%= form.label :preparation %>
   <%= form.text_area :preparation %>
+  <%= form.label :ingredients %>
+  <% @ingredients.each do |ingredient| %>
+    <li><%= ingredient.name %></li>
+  <% end %>  
 
+  <%= form.check_box(:ingredients) %>
   <%= form.submit 'Submit' %>
 
 <% end %>
+
+<% @ingredients.each do |ingredient| %>
+  <%= ingredient.name %>
+<% end %>  
+
+
+form.check_box
