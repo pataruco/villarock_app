@@ -11,7 +11,16 @@ $font_main: 'Roboto Condensed', sans-serif;
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 
-main {
+.ingredients {
   font-family: $font_nav;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color:grey;
+  }
 
 } // end main

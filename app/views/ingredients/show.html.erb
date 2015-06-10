@@ -1,13 +1,15 @@
-<h1> <%= @ingredient.name %> </h1>
+<main class="ingredients">
+  <h1> <%= @ingredient.name %> </h1>
 
-<% if @ingredient.stock %>
-  <p>In stock</p>
-  <%  else %>
-  <p>To buy</p>
-<% end %>
+  <% if @ingredient.stock %>
+    <p>In stock</p>
+    <%  else %>
+    <p>To buy</p>
+  <% end %>
 
-<%= link_to('Edit ingredient', edit_ingredient_path(@ingredient.id)) %>
-<%= link_to('Delete', ingredient_path(@ingredient.id), method: :delete) %>
+  <%= link_to('Edit ingredient', edit_ingredient_path(@ingredient.id)) %>
+  <%= link_to('Delete', ingredient_path(@ingredient.id), method: :delete) %>
+<main class="ingredients">
 
 
 

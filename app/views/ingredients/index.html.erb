@@ -1,11 +1,11 @@
-<main>
+<main class="ingredients">
   <h2>Index of ingredients</h2>
-
-  <% @ingredients.each do |ingredient| %>
-    <ul>
-      <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
-    </ul>
-  <% end   %>
+  <ul>
+    <% @ingredients.each do |ingredient| %>
+      
+        <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+    <% end   %>
+  </ul>
 </main>
 
 
