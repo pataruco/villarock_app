@@ -1,6 +1,6 @@
-<h1> <%= @meal.date %> </h1>
+<h1> <%= @meal.date.strftime('%a, %d %b %Y') %> </h1>
 
-<p><%= @meal.category %></p>
+<p><%= @meal.category.capitalize %></p>
 
 <p><%= @meal.recipe.name %></p>
 

@@ -1,9 +1,9 @@
 <ul>
 <% @meals.each do |meal| %>
-  <% if meal.recipe %>    
-    <li><h3><%= link_to(meal.date, meal_path(meal)) %></h3>
-    <p><%= meal.recipe.name %></p>
-    <p><%= meal.category %></p></li>
+  <% if meal.recipe %>      
+    <li><h3><%= link_to(meal.date.strftime('%a, %d %b %Y'), meal_path(meal)) %></h3>
+    <p><%= meal.category.capitalize %></p>
+    <p> Recipe: <%= meal.recipe.name %></p></li>
   <% end %>
 <% end %>
 </ul>
