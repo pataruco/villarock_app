@@ -7,14 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <nav class="nav">
-      <ul>
-          <li> <%= link_to('Ingredients', ingredients_path) %> </li>
-          <li> <%= link_to('Recipes', recipes_path) %> </li>
-          <li> <%= link_to('Meals', meals_path) %> </li>
-      </ul>
-  </nav>
+  <div class="navigation">
+    <nav class="nav">
+        <ul>
+            <li> <%= link_to('Ingredients', ingredients_path) %> </li>
+            <li> <%= link_to('Recipes', recipes_path) %> </li>
+            <li> <%= link_to('Meals', meals_path) %> </li>
+        </ul>
+    </nav>
+  </div>
+  <div class="nav_line">
+  </div>
 
 <%= yield %>
 

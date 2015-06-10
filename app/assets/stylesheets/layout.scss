@@ -1,0 +1,43 @@
+$pale_green: rgb(0, 254, 148);
+$dark_green: rgb(0, 132, 76);
+$orange: rgb(242, 96, 0);
+$blue: rgb(0, 203, 255);
+$yellow: rgb(247, 198, 0);
+$font_nav: 'Source Sans Pro', sans-serif;
+$font_main: 'Roboto Condensed', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+// body{
+//   background-color: $pale_green;
+// }
+
+.navigation {
+  font-family: $font_nav;
+  font-size: 24px;
+
+  background-color: $orange;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+
+  li { 
+    list-style:  none;
+    display: inline-block;
+    // text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover{
+    // background-color: $dark_green;
+    // color: grey;
+   font-size: 26px;
+  }
+} // end of navigation
+
+.nav_line {
+  height: 10px;
+  background-color: $yellow;
+}

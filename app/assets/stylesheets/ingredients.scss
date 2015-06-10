@@ -1,3 +1,17 @@
 // Place all the styles related to the ingredients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$pale_green: rgb(0, 254, 148);
+$dark_green: rgb(0, 132, 76);
+$orange: rgb(242, 96, 0);
+$blue: rgb(0, 203, 255);
+$yellow: rgb(247, 198, 0);
+$font_nav: 'Source Sans Pro', sans-serif;
+$font_main: 'Roboto Condensed', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+main {
+  font-family: $font_nav;
+
+} // end main
