@@ -2,7 +2,9 @@
 
 <p><%= @meal.category.capitalize %></p>
 
-<p><%= @meal.recipe.name %></p>
+<%= @meal.recipes.each do |recipe| %>
+  <p><%= recipe.name %></p>
+<% end %>
 
 
 <%= link_to('Edit meal', edit_meal_path(@meal.id)) %>

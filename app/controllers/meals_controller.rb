@@ -8,7 +8,7 @@ class MealsController < ApplicationController
   end
 
   def create
-    meal = Meal.new params[:meal].permit(:date, :category, :recipe)
+    meal = Meal.new params[:meal].permit(:date, :category, :recipes)
     if meal.save
       redirect_to meals_path
     else
