@@ -15,6 +15,19 @@ $font_main: 'Roboto Condensed', sans-serif;
 .recipes {
   padding: 5%;
   font-family: $font_main;
+  .recipes_buttons {
+    a:hover {
+      background: $dark_green;
+      color: white;
+    }
+
+    a {
+      background: $pale_green;
+      color: black;
+      padding: 1%;
+    }
+  }
+
   a {
     text-decoration: none;
     color: black;
@@ -60,6 +73,8 @@ $font_main: 'Roboto Condensed', sans-serif;
         }
     }
   }
+
+
 
   
 } //end recipies
