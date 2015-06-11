@@ -39,3 +39,15 @@ This app will have at least the  following resources:
 * Add tags for weeks for season browsing.
 * Add tag for recipes for kind of meat browsing.
 * Display the prices of the products via mySupermarket Basket API
+
+## How I did it:
+First, I planned how I would nest all the resources in [models](http://pataruco.s3.amazonaws.com/ga/villarock_app/models_3.pdf) and from then I did the wireframes.
+
+I wrote down this in document called [pitch](http://pataruco.s3.amazonaws.com/ga/villarock_app/models_3.pdf) and I sent it to the intructors to hear about their feedback, after their approval I wrote on [Trello](https://trello.com/b/rQ58vGmX/viilarock-app) the steps to accomplished the above
+
+
+
+## Technologies
+I built all the app on Ruby on Rails, I used the Gem `simple_form` to help me with the creation of the objects, because I had to many problems using 2 instances variables on the form helper built-in on Rails.
+
+Also, I found on Ruby documentation the possibility to make something called ‘[enum status](http://edgeapi.rubyonrails.org/classes/ActiveRecord/Enum.html)’ which change the status of the object when you called the method. I implemented it  on the model Meal to choose between the three different meals that you can have: breakfast, lunch and dinner. 

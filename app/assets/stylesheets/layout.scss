@@ -10,7 +10,8 @@ $font_main: 'Roboto Condensed', sans-serif;
 
 .navigation {
   nav {
-    background:#FFF;float:left;
+    background:#FFF;
+    float:left;
   }
   nav ul {
     text-align:center;
@@ -38,7 +39,8 @@ $font_main: 'Roboto Condensed', sans-serif;
   nav ul li ul li a {
     display:block;
     padding:15px 10px;
-    color:#444;}
+    color:#444;
+  }
 
   nav ul li ul li:hover a {
     background:#F7F7F7;
