@@ -13,6 +13,8 @@ $font_main: 'Roboto Condensed', sans-serif;
 
 .ingredients {
   font-family: $font_nav;
+  width: 50%;
+  margin: 0 auto;
 
   a {
     text-decoration: none;
@@ -21,6 +23,15 @@ $font_main: 'Roboto Condensed', sans-serif;
 
   a:hover {
     color:grey;
+  }
+
+  .ingredients_buttons {
+    a {
+      border-style: solid;
+      background-color: rgb(0, 254, 148);
+      padding: 2px;
+    }
+
   }
 
 } // end main
