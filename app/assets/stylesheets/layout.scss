@@ -9,6 +9,10 @@ $font_main: 'Roboto Condensed', sans-serif;
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 .navigation {
+  background-color: $dark_green;
+  color: white;
+  font-family: $font_nav;
+  font-size: px;
   nav {
     // background:#FFF;
     // float:left;
@@ -19,16 +23,17 @@ $font_main: 'Roboto Condensed', sans-serif;
     margin: 0 auto;
   }
   nav ul li {
-    float:left;
-    display:inline-block;
+    // float:left;
+    display: inline-block;
   }
   nav ul li:hover {
-    background:#E6E6E6;
+    background-color: $pale_green;
   }
   nav ul li a {
     display:block;
     padding:15px 25px;
-    color:#444;
+    color:white;
+    text-decoration: none;
   }
   nav ul li ul {
     position:absolute;
