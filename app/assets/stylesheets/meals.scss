@@ -81,6 +81,23 @@ $font_main: 'Roboto Condensed', sans-serif;
     }
   }
 
+  .meals_index {
+    display: inline-block;
+
+    li {
+      list-style: none;
+    }
+    h3 {
+      background-color: $pale_green;
+      padding: 1%;
+    }
+    // p {
+    //   background-color: $yellow;
+    // }
+    
+
+  }
+
 
 
 

@@ -1,14 +1,21 @@
-<ul>
-<% @meals.each do |meal| %>
-  <% if meal.recipes %>      
-    <li><h3><%= link_to(meal.date.strftime('%a, %d %b %Y'), meal_path(meal)) %></h3>
-    <p><%= meal.category.capitalize %></p>
-    <% meal.recipes.each do |recipe| %>
-      <ul>
-        <li><%= recipe.name %></li>
-      </ul>
-    <% end %>
-  <% end %>
-<% end %>
-</ul>
+<main class="meals">
+  <div class="meals_index">
+    <ul>
+      <% @meals.each do |meal| %>
+        <span>
+          <% if meal.recipes %>      
+            <li><h3><%= link_to(meal.date.strftime('%a, %d %b %Y'), meal_path(meal)) %></h3></li>
+            <p><%= meal.category.capitalize %></p>
+            <% meal.recipes.each do |recipe| %>
+              <ul>
+                <li><%= recipe.name %></li>
+              </span>
+            </ul>
+          <% end %>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</main>
+
 
