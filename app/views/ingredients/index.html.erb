@@ -1,4 +1,8 @@
 <main class="ingredients">
+  <div class="index_view">
+    <button class="in_stock">In Stock</button>
+    <button class="buy">To buy</button>
+  </div>
   <div class="ingredients_list">
     <h2>Index of ingredients</h2>
     <ul>
@@ -27,7 +31,7 @@
       <% if ingredient.stock === false %>
         <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
       <% end %>
-    <% end   %>
+    <% end %>
     </ul> 
   </div>
 </main>

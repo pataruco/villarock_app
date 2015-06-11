@@ -13,8 +13,8 @@ $font_main: 'Roboto Condensed', sans-serif;
 
 .ingredients {
   font-family: $font_nav;
-  width: 50%;
-  margin: 0 auto;
+  // width: 50%;
+  // margin: 0 auto;
 
   a {
     text-decoration: none;
@@ -25,14 +25,47 @@ $font_main: 'Roboto Condensed', sans-serif;
     color:grey;
   }
 
-  .ingredients_buttons {
-    a {
-      border-style: solid;
-      background-color: rgb(0, 254, 148);
-      padding: 2px;
+  .ingredients_list {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0% 5%;
+  }
+
+  .ingredients_stock {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0% 5%;
+  }
+
+  .ingredients_to_buy {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0% 5%;
+  }
+  .index_view {
+    padding: 1%;
+
+    button {
+      background-color: $pale_green;
+      color: black;
+      border: none;
+    }
+
+     button:hover {
+      background-color: $dark_green;
+      color: white;
+      border: none;
     }
 
 
+
   }
+
+
+
+
+  
+
+
 
 } // end main
