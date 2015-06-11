@@ -2,9 +2,9 @@
   <div class="ingridients_show">
     <h1> <%= @ingredient.name %> </h1>
     <% if @ingredient.stock %>
-      <p>In stock</p>
+      <p class="stock_tag">In stock</p>
       <%  else %>
-      <p>To buy</p>
+      <p class="buy_tag">To buy</p>
     <% end %>
     <span class="ingredients_buttons">
       <%= link_to('Edit', edit_ingredient_path(@ingredient.id)) %>

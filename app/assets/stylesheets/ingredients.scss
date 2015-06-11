@@ -65,6 +65,14 @@ $font_main: 'Roboto Condensed', sans-serif;
     display: inline-block;
     width: 50%;
     margin-left: 7%;
+    .stock_tag {
+      font-size: 24px;
+      color: green;
+    }
+    .buy_tag {
+      font-size: 24px;
+      color: red;
+    }
   }
 
   .ingredients_buttons {
@@ -80,6 +88,33 @@ $font_main: 'Roboto Condensed', sans-serif;
       padding: 1%;
     }
   }
+
+  .ingredients_new {
+    padding: 5%;
+    .new_ingredient {
+        display: table-caption;
+        input {
+          margin: 7% 0%;
+        }
+        label {
+          margin: 7% 0%;
+        }
+    }
+  }
+  .ingredients_edit {
+    padding: 5%;
+    .edit_ingredient {
+        display: table-caption;
+        input {
+          margin: 7% 0%;
+          // border: none;
+        }
+        label {
+          margin: 7% 0%;
+        }
+    }
+  }
+
 
 
 

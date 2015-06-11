@@ -1,12 +1,15 @@
 <main class="ingredients"> 
-  <%= form_for @ingredient do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.radio_button(:stock, :true) %>
-    <%= f.label(:in_stock, 'In Stock') %>
-    <%= f.radio_button(:stock, :false) %>
-    <%= f.label(:to_buy, 'To buy') %>
+  <div class="ingredients_new">
+    <%= form_for @ingredient do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      
+      <%= f.radio_button(:stock, :true) %>
+      <%= f.label(:in_stock, 'In Stock') %>
+      <%= f.radio_button(:stock, :false) %>
+      <%= f.label(:to_buy, 'To buy') %>
 
-    <%= f.submit 'New ingredient' %>
-  <% end %>
+      <%= f.submit 'New ingredient' %>
+    <% end %>
+  </div>
 </main>
