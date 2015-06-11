@@ -1,15 +1,18 @@
 <main class="recipes">
-  <%= simple_form_for @recipe do |form| %>
-    
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="recipes_new">
+    <%= simple_form_for @recipe do |form| %>
+      
+      <%= form.label :name %>
+      <%= form.text_field :name %>
 
-    <%= form.label :preparation %>
-    <%= form.text_area :preparation %>
-    <%= form.association :ingredients, as: :check_boxes %>
+      <%= form.label :preparation %>
+      <%= form.text_area :preparation %>
+      <div class="recipes_new_check_boxes">
+        <%= form.association :ingredients, as: :check_boxes %>
+      </div>
 
+      <%= form.submit %>
 
-    <%= form.submit %>
-
-  <% end %>
+    <% end %>
+  </div>
 </main>
