@@ -11,7 +11,7 @@ class IngredientsController < ApplicationController
 
   def create
     @page = 'Ingredients'
-    ingredient = Ingredient.new params[:ingredient].permit(:name)
+    ingredient = Ingredient.new params[:ingredient].permit(:name, :stock)
 
     if ingredient.save
       redirect_to ingredients_path

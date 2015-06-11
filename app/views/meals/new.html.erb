@@ -1,19 +1,25 @@
-<%= simple_form_for @meal do |form| %>
-  
-  <%= form.label :date %>
-  <%= form.date_field :date %>
+<main class="meals">
+  <div class="meals_new">
+    <%= simple_form_for @meal do |form| %>
+      
+      <%= form.label :date %>
+      <%= form.date_field :date %>
 
-  <%= form.label(:category, 'Breakfast') %>
-  <%= form.radio_button(:category, :breakfast) %>
+      <%= form.label(:category, 'Breakfast') %>
+      <%= form.radio_button(:category, :breakfast) %>
 
-  <%= form.label(:category, 'Lunch') %>
-  <%= form.radio_button(:category, :lunch) %>
+      <%= form.label(:category, 'Lunch') %>
+      <%= form.radio_button(:category, :lunch) %>
 
-  <%= form.label(:category, 'Dinner') %>
-  <%= form.radio_button(:category, :dinner) %>
-  
-  <%= form.association :recipes, as: :check_boxes %>
+      <%= form.label(:category, 'Dinner') %>
+      <%= form.radio_button(:category, :dinner) %>
 
-  <%= form.submit %>
+      <div class="meals_new_check_boxes">
+        <%= form.association :recipes, as: :check_boxes %>
+      </div>
 
-<% end %>
+      <%= form.submit %>
+
+    <% end %>
+  </div>
+</main>

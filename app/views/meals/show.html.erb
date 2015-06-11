@@ -1,14 +1,17 @@
-<h1> <%= @meal.date.strftime('%a, %d %b %Y') %> </h1>
+<main class="meals">
+  <div class="meals_show">
+    <h1> <%= @meal.date.strftime('%a, %d %b %Y') %> </h1>
+    <h2><%= @meal.category.capitalize %></h2>
+    <% @meal.recipes.each do |recipe| %>
+      <h3><%= recipe.name %></h3>
+    <% end %>
+    <span class="meals_buttons">
+      <%= link_to('Edit meal', edit_meal_path(@meal.id)) %>
+      <%= link_to('Delete', meal_path(@meal.id), method: :delete) %>
+    </span>
+  </div>
+</main>
 
-<p><%= @meal.category.capitalize %></p>
-
-<% @meal.recipes.each do |recipe| %>
-  <p><%= recipe.name %></p>
-<% end %>
-
-
-<%= link_to('Edit meal', edit_meal_path(@meal.id)) %>
-<%= link_to('Delete', meal_path(@meal.id), method: :delete) %>
 
 
 
