@@ -3,7 +3,7 @@
 <head>
   <title>Villarock App | <%= @page %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -23,12 +23,10 @@
             <li><%= link_to('New Recipe', new_recipe_path) %></li>
           </ul>
         </li>
-        <li>
+        <li class="ButtonIngredientNav">
           <%= link_to('Ingredients', ingredients_path) %>
           <ul class="fallback">
             <li><%= link_to('New ingredient', new_ingredient_path) %></li>
-            <li><%= link_to('In Stock', ingredients_path) %></li>
-            <li><%= link_to('To buy', ingredients_path) %></li>
           </ul>
         </li>
       </ul>

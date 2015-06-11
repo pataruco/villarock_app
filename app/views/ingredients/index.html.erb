@@ -4,7 +4,7 @@
     <button class="buy">To buy</button>
   </div>
   <div class="ingredients_list">
-    <h2>Index of ingredients</h2>
+    <h2>All ingredients</h2>
     <ul>
       <% @ingredients.each do |ingredient| %>
         
@@ -14,7 +14,7 @@
   </div>
 
   <div class="ingredients_stock">
-    <h2>Ingredients on stock</h2>
+    <h2>In stock</h2>
     <ul>
     <% @ingredients.each do |ingredient| %>
       <% if ingredient.stock %>
@@ -25,7 +25,7 @@
   </div>
 
   <div class="ingredients_to_buy">
-  <h2>Ingredients to buy</h2>
+  <h2>To buy</h2>
     <ul>
     <% @ingredients.each do |ingredient| %>
       <% if ingredient.stock === false %>
