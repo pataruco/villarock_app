@@ -27,7 +27,7 @@ $font_main: 'Roboto Condensed', sans-serif;
     display: inline-block;
   }
   nav ul li:hover {
-    background-color: $pale_green;
+    // background-color: $pale_green;
   }
   nav ul li a {
     display:block;
@@ -36,21 +36,25 @@ $font_main: 'Roboto Condensed', sans-serif;
     text-decoration: none;
   }
   nav ul li ul {
+    display:block;
     position:absolute;
     width:110px;
-    background:#FFF;
+    background: $pale_green;
   }
   nav ul li ul li {
     width:110px;
+    border-radius: 5px;
   }
   nav ul li ul li a {
-    display:block;
-    padding:15px 10px;
-    color:#444;
+    display: block;
+    // padding:15px 10px;
+    color: white;
   }
 
   nav ul li ul li:hover a {
-    background:#F7F7F7;
+    background: $dark_green; 
+    color: white;
+    // border-radius: 5px;
   }
   nav ul li ul.fallback {
     display:none;
