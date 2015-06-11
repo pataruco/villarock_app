@@ -42,6 +42,7 @@ $font_main: 'Roboto Condensed', sans-serif;
     vertical-align: top;
     padding: 0% 5%;
   }
+
   .index_view {
     padding: 1%;
 
@@ -49,16 +50,35 @@ $font_main: 'Roboto Condensed', sans-serif;
       background-color: $pale_green;
       color: black;
       border: none;
+      padding: 7px;
     }
 
      button:hover {
       background-color: $dark_green;
       color: white;
       border: none;
+      padding: 7px;
+    }
+  }
+
+  .ingridients_show {
+    display: inline-block;
+    width: 50%;
+    margin-left: 7%;
+  }
+
+  .ingredients_buttons {
+    a:hover {
+      background: $dark_green;
+      color: white;
+      
     }
 
-
-
+    a {
+      background: $pale_green;
+      color: black;
+      padding: 1%;
+    }
   }
 
 
