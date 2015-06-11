@@ -1,11 +1,35 @@
 <main class="ingredients">
-  <h2>Index of ingredients</h2>
-  <ul>
+  <div class="ingredients_list">
+    <h2>Index of ingredients</h2>
+    <ul>
+      <% @ingredients.each do |ingredient| %>
+        
+          <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+      <% end   %>
+    </ul>
+  </div>
+
+  <div class="ingredients_stock">
+    <h2>Ingredients on stock</h2>
+    <ul>
     <% @ingredients.each do |ingredient| %>
-      
+      <% if ingredient.stock %>
         <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+      <% end %>
     <% end   %>
-  </ul>
+    </ul> 
+  </div>
+
+  <div class="ingredients_to_buy">
+  <h2>Ingredients to buy</h2>
+    <ul>
+    <% @ingredients.each do |ingredient| %>
+      <% if ingredient.stock === false %>
+        <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+      <% end %>
+    <% end   %>
+    </ul> 
+  </div>
 </main>
 
 
