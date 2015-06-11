@@ -2,7 +2,7 @@
 
 <p><%= @meal.category.capitalize %></p>
 
-<%= @meal.recipes.each do |recipe| %>
+<% @meal.recipes.each do |recipe| %>
   <p><%= recipe.name %></p>
 <% end %>
 

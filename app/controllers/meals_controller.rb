@@ -1,6 +1,6 @@
 class MealsController < ApplicationController
   def index
-    @meals = Meal.all
+    @meals = Meal.all.map { |meal| meal if meal.date.month == Date.today.month }.compact
   end
 
   def new
