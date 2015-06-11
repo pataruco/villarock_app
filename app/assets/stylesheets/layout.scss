@@ -9,30 +9,47 @@ $font_main: 'Roboto Condensed', sans-serif;
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 .navigation {
-  font-family: $font_nav;
-  font-size: 24px;
-
-  background-color: $dark_green;
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
-
-  li { 
-    list-style:  none;
-    display: inline-block;
-    // text-align: center;
+  nav {
+    background:#FFF;float:left;
   }
-  a {
-    text-decoration: none;
-    color: white;
+  nav ul {
+    text-align:center;
   }
+  nav ul li {
+    float:left;
+    display:inline;
+  }
+  nav ul li:hover {
+    background:#E6E6E6;
+  }
+  nav ul li a {
+    display:block;
+    padding:15px 25px;
+    color:#444;
+  }
+  nav ul li ul {
+    position:absolute;
+    width:110px;
+    background:#FFF;
+  }
+  nav ul li ul li {
+    width:110px;
+  }
+  nav ul li ul li a {
+    display:block;
+    padding:15px 10px;
+    color:#444;}
 
-  a:hover{
-    // background-color: $dark_green;
-    // color: grey;
-   font-size: 26px;
+  nav ul li ul li:hover a {
+    background:#F7F7F7;
   }
-} // end of navigation
+  nav ul li ul.fallback {
+    display:none;
+  }
+  nav ul li:hover ul.fallback {
+    display:block;
+  }
+}
 
 .nav_line {
   height: 10px;

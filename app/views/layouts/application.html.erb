@@ -8,18 +8,36 @@
 </head>
 <body>
   <div class="navigation">
-    <nav class="nav">
-        <ul>
-            <li> <%= link_to('Ingredients', ingredients_path) %> </li>
-            <li> <%= link_to('Recipes', recipes_path) %> </li>
-            <li> <%= link_to('Meals', meals_path) %> </li>
-        </ul>
+    <nav>
+      <ul>
+        <li><%= link_to('Home', meals_path) %></li>
+        <li>
+          <%= link_to('Meals', meals_path) %>
+          <ul class="fallback">
+            <li><%= link_to('New meal', new_meal_path) %></li>
+          </ul>
+        </li>
+        <li>
+          <%= link_to('Recipes', recipes_path) %>
+          <ul class="fallback">
+            <li><%= link_to('New Recipe', new_recipe_path) %></li>
+          </ul>
+        </li>
+        <li>
+          <%= link_to('Ingredients', ingredients_path) %>
+          <ul class="fallback">
+            <li><%= link_to('New ingredient', new_ingredient_path) %></li>
+            <li><%= link_to('In Stock', ingredients_path) %></li>
+            <li><%= link_to('To buy', ingredients_path) %></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </div>
-  <div class="nav_line">
-  </div>
 
+  
 <%= yield %>
 
 </body>
 </html>
+
