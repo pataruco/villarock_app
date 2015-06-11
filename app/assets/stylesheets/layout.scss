@@ -10,15 +10,17 @@ $font_main: 'Roboto Condensed', sans-serif;
 
 .navigation {
   nav {
-    background:#FFF;
-    float:left;
+    // background:#FFF;
+    // float:left;
   }
   nav ul {
-    text-align:center;
+    display: inline-block;
+    // text-align:center;
+    margin: 0 auto;
   }
   nav ul li {
     float:left;
-    display:inline;
+    display:inline-block;
   }
   nav ul li:hover {
     background:#E6E6E6;
