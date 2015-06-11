@@ -1,17 +1,19 @@
-<h1> <%= @recipe.name %> </h1>
+<main class="recipes">
+  <h1> <%= @recipe.name %> </h1>
 
-<p><%= @recipe.preparation %></p>
+  <p><%= @recipe.preparation %></p>
 
-<% @recipe.ingredients.each do |ingredient| %>
-  <li><%= ingredient.name  %></li>
-  <% if ingredient.stock %>
-    <p>In stock</p>
-  <% else %>
-    <p>To buy<p>
+  <% @recipe.ingredients.each do |ingredient| %>
+    <li><%= ingredient.name  %></li>
+    <% if ingredient.stock %>
+      <p>In stock</p>
+    <% else %>
+      <p>To buy</p>
+    <% end %>
   <% end %>
-<% end %>
-<%= link_to('Edit recipe', edit_recipe_path(@recipe.id)) %>
-<%= link_to('Delete', recipe_path(@recipe.id), method: :delete) %>
+  <%= link_to('Edit recipe', edit_recipe_path(@recipe.id)) %>
+  <%= link_to('Delete', recipe_path(@recipe.id), method: :delete) %>
+</main>
 
 
 

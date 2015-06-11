@@ -1,7 +1,9 @@
-<h1>Index of recipies</h1>
+<main class="recipes">
+  <h1>Index of recipies</h1>
 
-<% @recipes.each do |recipe| %>
-  <ul>
-    <li><%= link_to recipe.name, recipe_path(recipe) %></li>
-  </ul>
-<% end %>
+  <% @recipes.each do |recipe| %>
+    <ul>
+      <li><%= link_to recipe.name, recipe_path(recipe) %></li>
+    </ul>
+  <% end %>
+</main>

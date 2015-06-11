@@ -1,16 +1,16 @@
-<h1><%= @recipe.name %></h1>
+<main class="recipes">
+  <h1><%= @recipe.name %></h1>
 
+  <%= simple_form_for @recipe do |form| %>
+    
+    <%= form.label :name %>
+    <%= form.text_field :name %>
 
-<%= simple_form_for @recipe do |form| %>
-  
-  <%= form.label :name %>
-  <%= form.text_field :name %>
+    <%= form.label :preparation %>
+    <%= form.text_area :preparation %>
+    <%= form.association :ingredients, as: :check_boxes %>
 
-  <%= form.label :preparation %>
-  <%= form.text_area :preparation %>
-  <%= form.association :ingredients, as: :check_boxes %>
+    <%= form.submit %>
 
-
-  <%= form.submit %>
-
-<% end %>
+  <% end %>
+</main>
