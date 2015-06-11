@@ -4,7 +4,9 @@
     <li><h3><%= link_to(meal.date.strftime('%a, %d %b %Y'), meal_path(meal)) %></h3>
     <p><%= meal.category.capitalize %></p>
     <% meal.recipes.each do |recipe| %>
-      <%= recipe.name %>
+      <ul>
+        <li><%= recipe.name %></li>
+      </ul>
     <% end %>
   <% end %>
 <% end %>
