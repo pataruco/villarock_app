@@ -43,7 +43,7 @@ This app will have at least the  following resources:
 ## How I did it:
 First, I planned how I would nest all the resources in [models](http://pataruco.s3.amazonaws.com/ga/villarock_app/models_3.pdf) and from then I did the wireframes.
 
-I wrote down this in document called [pitch](http://pataruco.s3.amazonaws.com/ga/villarock_app/models_3.pdf) and I sent it to the intructors to hear about their feedback, after their approval I wrote on [Trello](https://trello.com/b/rQ58vGmX/viilarock-app) the steps to accomplished the above
+I wrote down this in document called [pitch](http://pataruco.s3.amazonaws.com/ga/villarock_app/pitch_villarock.pdf) and I sent it to the intructors to hear about their feedback, after their approval I wrote on [Trello](https://trello.com/b/rQ58vGmX/viilarock-app) the steps to accomplished the above
 
 
 
