@@ -99,6 +99,18 @@ $font_main: 'Roboto Condensed', sans-serif;
 
   .meals_index {
     display: inline-block;
+    margin-left: 6%;
+
+
+    .meals_each {
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid $dark_green;
+      margin: 1%;
+      // padding: 1px;
+      height: 150px;
+      width: 150px;
+    }
 
     li {
       list-style: none;
