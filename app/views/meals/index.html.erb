@@ -1,5 +1,6 @@
 <main class="meals">
   <div class="meals_index">
+  <h1>Meals of the month </h1>
     <% @meals.each do |meal| %>
         <div class="meals_each">
           <% if meal.recipes %>      
@@ -7,7 +8,6 @@
             <p><%= meal.category.capitalize %></p>
             <% meal.recipes.each do |recipe| %>
                 <li><%= recipe.name %></li>
-
           <% end %>
           </div>
         <% end %>
