@@ -99,6 +99,15 @@ $font_main: 'Roboto Condensed', sans-serif;
         label {
           margin: 7% 0%;
         }
+        input[type=submit] {
+          background-color: $pale_green;
+          border: none;
+        }
+        input[type=submit]:hover {
+          background-color: $dark_green;
+          border: none;
+        }
+
     }
   }
   .ingredients_edit {
@@ -112,6 +121,15 @@ $font_main: 'Roboto Condensed', sans-serif;
         label {
           margin: 7% 0%;
         }
+        input[type=submit] {
+          background-color: $pale_green;
+          border: none;
+        }
+        input[type=submit]:hover {
+          background-color: $dark_green;
+          border: none;
+        }
+
     }
   }
 

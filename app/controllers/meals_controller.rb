@@ -10,7 +10,7 @@ class MealsController < ApplicationController
   end
 
   def create
-    @page = 'Meals'
+    # @page = 'Meals'
     meal = Meal.new params[:meal].permit(:date, :category, :recipe_ids => [])
     if meal.save
       redirect_to meals_path
@@ -46,7 +46,7 @@ class MealsController < ApplicationController
   private
 
   def meal_params
-    params.require(:meal).permit(:date, :category)
+    params.require(:meal).permit(:date, :category, :recipe_ids)
   end
 
 
