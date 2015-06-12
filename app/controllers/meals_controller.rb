@@ -1,7 +1,7 @@
 class MealsController < ApplicationController
   def index
     @page = 'Meals'
-    @meals = Meal.all.map { |meal| meal if meal.date.month == Date.today.month }.compact
+    @meals = Meal.all.map { |meal| meal if meal.date.month == Date.today.month }.compact.sort_by &:date
   end
 
   def new
