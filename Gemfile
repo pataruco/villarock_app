@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.1.5'
 
 gem 'rails', '4.2.0'
 gem 'pg'
@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'thin'
   gem 'normalize-rails', '~> 3.0.3'
   gem 'simple_form'
+  gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug'
