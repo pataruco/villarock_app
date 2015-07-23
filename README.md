@@ -50,3 +50,7 @@ I wrote down this in document called [pitch](http://pataruco.s3.amazonaws.com/ga
 I built all the app on Ruby on Rails, I used the Gem `simple_form` to help me with the creation of the objects, because I had too many problems using 2 instance variables in the built in form on Rails.
 
 Also, I found instructions in the  Ruby documentation explaining how make something called ‘[enum status](http://edgeapi.rubyonrails.org/classes/ActiveRecord/Enum.html)’ which changes the status of an object when you call the method. I implemented it  on the model Meal to choose between the three different meals that you can have: breakfast, lunch and dinner.
+
+## Take a look
+
+![](http://pataruco.s3.amazonaws.com/ga/villarock_app/villarock-screen.png)
