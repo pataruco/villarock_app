@@ -16,6 +16,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'normalize-rails', '~> 3.0.3'
   gem 'simple_form'
   gem 'rails_12factor'
+  gem 'bootstrap-sass', '~> 3.3.5'
 
 group :development, :test do
   gem 'byebug'
